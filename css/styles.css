@@ -1,0 +1,415 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Kiwi Maru', sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+.container{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.header-logo{
+  float: left;
+}
+
+.header-logo img{
+  height: 80px;
+}
+
+.header-menu{
+  margin-left: auto;
+  float: right;
+}
+
+.header-menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header-menu a{
+  font-size: 15px;
+  font-weight: bold;
+  color: darkslateblue;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  line-height: 80px;
+  display: block;
+  transition: all 0.5s;
+}
+
+.header-menu a:hover{
+  color:skyblue;
+}
+
+.header-menu p{
+  font-size: 18px;
+  color: darkslateblue;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* トップ */
+main{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 300px 0 200px;
+  text-align: center;
+  background: center/cover url("../img/top.jpeg");
+  margin-bottom: 30px;
+}
+
+.title{
+  background-color: rgba(255,255,255,0.5);
+  padding: 30px;
+  color: darkslateblue
+}
+
+.title h1{
+  font-size :45px;
+  font-weight: normal;
+}
+
+.title h2{
+  font-size :36px;
+  font-weight: normal;
+}
+.title p{
+  font-size: 15px;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/* 記事 */
+.section{
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  text-align: center;
+  color: darkslateblue;
+}
+
+.section h1{
+  font-size :18px;
+}
+
+.section p{
+  font-size: 15px;
+}
+.section img{
+  width: 100%;
+}
+
+.article{
+  width: 20%;
+}
+
+/* 会社概要 */
+
+.profile h1{
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid darkslateblue;
+}
+
+.profile p{
+  font-size: 15px;
+  text-align: center;
+}
+
+.company-profile{
+  margin: 100px auto;
+  width: 90%;
+  color: darkslateblue;
+}
+
+.company-profile h1{
+  margin-bottom: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+th,td {
+  border: solid 1px #cccccc;
+  padding: 20px;
+  font-size: 15px;
+}
+
+th {
+  width: 20%;
+  text-align: left;
+  background-color: #555d6b;
+  color: #ffffff;
+}
+
+td {
+  background-color: #e8eef9;
+  width: 70%;
+}
+
+.greeting{
+  margin: 100px auto 200px;
+  width: 90%;
+  color: darkslateblue;
+}
+
+.message{
+  text-align: center;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.message img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.message ul{
+  list-style: none;
+  font-size: 15px;
+  text-align: start;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.icon{
+  width: 35%;
+}
+
+.column{
+  width: 55%;
+}
+
+.column p{
+  text-align: start;
+  font-size: 15px;
+}
+
+.column h2{
+  font-size: 18px;
+  text-align: end;
+  margin: 50px 10px 0 0;
+}
+
+/* 問い合わせ */
+.contact{
+  width: 90%;
+  margin: 200px auto;
+  color: darkslateblue;
+}
+
+.contact h1{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 1px solid darkslateblue;
+}
+
+.contact p{
+  font-size: 15px;
+}
+
+.caution p{
+  font-size: 12px;
+}
+
+.form{
+  width: 80%;
+  margin: 0 auto;
+}
+
+form p {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+textarea {
+  height: 120px;
+}
+
+input[type="submit"] {
+  background-color: #ffaa00;
+  border: none;
+  -webkit-appearance: none;
+  width: 250px;
+}
+
+.submit-btn{
+  text-align: center;
+}
+
+/* ページ内リンク */
+.page-link{
+  padding-top: 100px;
+  margin-top:-100px;
+}
+
+footer{
+  margin: 200px 0 20px;
+}
+
+footer p{
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 1000px){
+  .section{
+    flex-wrap: wrap;
+  }
+  
+  .article{
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px){
+  .section{
+    flex-wrap: wrap;
+  }
+
+  .article{
+    width: 100%;
+  }
+
+  header{
+    height: 80px;
+  }
+
+  .header-logo img{
+    width: 120px;
+  }
+
+  .header-menu ul{
+    padding-right: 5px;
+  }
+
+  .header-menu a{
+    font-size: 10px;
+    width: 60px;
+    line-height: 80px;
+  }
+  
+  .header-menu p{
+    padding-right: 5px;
+    font-size: 13px;
+  }
+
+  .btn-wrapper .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-wrapper p {
+    text-align: center;
+  }
+
+  .facebook {
+    margin-bottom: 10px;
+  }
+
+  main{
+    padding-top: 180px;
+  }
+
+  .title h1{
+    font-size: 30px;
+  }
+  
+  .title h2{
+    font-size: 23px;
+  }
+
+  .profile p{
+    padding: 10px 30px;
+  }
+
+  .message{
+    display: block;
+  }
+
+  .icon{
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .column{
+    width: 100%;
+  }
+
+  .form{
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
