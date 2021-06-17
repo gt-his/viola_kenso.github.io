@@ -15,25 +15,27 @@ body{
 
 /* ヘッダー */
 header {
-  height: 80px;
+  height: 75px;
+  max-width: 1170px;
   width: 100%;
+  margin: 0 auto;
   position: fixed;
   top: 0;
-  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  /* z-index: 10; */
   background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-logo{
-  float: left;
-}
-
-.header-logo img{
-  height: 80px;
+  padding-left: 8px;
+  height: 75px;
 }
 
 .header-menu{
-  margin-left: auto;
-  float: right;
+  padding-right: 16px;
 }
 
 .header-menu ul{
@@ -50,7 +52,7 @@ header {
   text-decoration: none;
   width: 100px;
   text-align: center;
-  line-height: 80px;
+  line-height: 75px;
   display: block;
   transition: all 0.5s;
 }
@@ -67,12 +69,21 @@ header {
   margin-top: 0;
 }
 
+.sp-menu{
+  opacity: 0;
+}
+
+.overlay{
+  opacity: 0;
+  position: fixed;
+}
+
 /* トップ */
 main{
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
-  padding: 300px 0 200px;
+  padding: 180px 0 180px;
   text-align: center;
   background: center/cover url("../img/top.jpg");
   margin-bottom: 30px;
@@ -340,27 +351,60 @@ footer p{
     width: 100%;
   }
 
-  header{
-    height: 80px;
+  .header-menu{
+    display: none;
   }
 
-  .header-logo img{
-    width: 120px;
+  .sp-menu{
+    opacity: 1;
   }
 
-  .header-menu ul{
-    padding-right: 5px;
+  .sp-menu #open{
+    font-size: 32px;
+    line-height: 75px;
+    padding-right: 16px;
+    cursor: pointer;
   }
 
-  .header-menu a{
-    font-size: 10px;
-    width: 70px;
-    line-height: 80px;
+  .sp-menu #open.hide{
+    display: none;
   }
-  
-  .header-menu p{
-    padding-right: 5px;
-    font-size: 13px;
+
+  .overlay{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 80px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+  }
+
+  .overlay.show{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .overlay #close{
+    position: absolute;
+    top: 24px;
+    right: 18px;
+    font-size: 35px;
+    cursor: pointer;
+    Z-index: 10;
+  }
+
+  .overlay ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .overlay li{
+    margin-top: 24px;
   }
 
   .btn-wrapper .btn {

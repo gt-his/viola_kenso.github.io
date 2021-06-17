@@ -9,22 +9,38 @@
   <title>外壁・屋根リフォームのビオラ建装</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 </head>
 <body>
+  <div class="container">
+  </div><!-- container -->
   <header>
-    <div class="container">
-      <div class="header-logo"><a href="#"><img src="img/logo文字.png" alt="ロゴ"></a></div>
-      <div class="header-menu">
-        <nav>
-          <ul>
-            <li><a href="#">トップページ</a></li>
-            <li><a href="#profile-link">会社概要</a></li>
-            <li><a href="#contact-link">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="header-logo"><a href="#"><img src="img/logo文字.png" alt="ロゴ"></a></div>
+    <div class="sp-menu">
+      <i class="fas fa-bars" id="open"></i>
+      <!-- <span class="material-icons" id="open">menu</span> -->
+    </div>
+    <div class="header-menu">
+      <nav>
+        <ul>
+          <li><a href="#">トップページ</a></li>
+          <li><a href="#profile-link">会社概要</a></li>
+          <li><a href="#contact-link">お問い合わせ</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
+  <div class="overlay">
+    <i class="fas fa-times" id="close"></i>
+    <!-- <span class="material-icons" id="close">close</span> -->
+    <nav>
+      <ul>
+        <li><a href="#">トップページ</a></li>
+        <li><a href="#profile-link">会社概要</a></li>
+        <li><a href="#contact-link">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
   <main>
     <div class="container">
       <div class="title">
@@ -38,7 +54,7 @@
           <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterはこちら</a>
         </div>
       </div>
-    </div>
+    </div><!-- container -->
   </main>
   <div class="container">
     <div class="section">
@@ -140,6 +156,6 @@
     <p><a href="#"><img src="img/logo.png" alt="ロゴ" width=100px></a></p>
     <p>copy-light 2021 Viola_Kenso</p>
   </footer>
-  <script> </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
