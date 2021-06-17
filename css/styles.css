@@ -112,12 +112,12 @@ main{
   padding: 8px 24px;
   color: white;
   display: inline-block;
-  opacity: 0.8;
+  opacity: 1;
   border-radius: 4px;
 }
 
 .btn:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .signup {
@@ -218,7 +218,7 @@ td {
 }
 
 .greeting{
-  margin: 100px auto 200px;
+  margin: 100px auto 300px;
   width: 90%;
   color: darkslateblue;
 }
@@ -340,6 +340,62 @@ footer p{
   .article{
     width: 40%;
   }
+
+  .header-menu{
+    display: none;
+  }
+  
+  .sp-menu{
+    opacity: 1;
+  }
+  
+  .sp-menu #open{
+    font-size: 32px;
+    line-height: 75px;
+    padding-right: 16px;
+    cursor: pointer;
+  }
+  
+  .sp-menu #open.hide{
+    display: none;
+  }
+  
+  .overlay{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.85);
+    text-align: end;
+    padding: 80px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+  }
+  
+  .overlay.show{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .overlay #close{
+    position: absolute;
+    top: 24px;
+    right: 18px;
+    font-size: 35px;
+    cursor: pointer;
+    Z-index: 10;
+  }
+  
+  .overlay ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .overlay li{
+    margin-top: 24px;
+  }
 }
 
 @media (max-width: 600px){
@@ -351,61 +407,6 @@ footer p{
     width: 100%;
   }
 
-  .header-menu{
-    display: none;
-  }
-
-  .sp-menu{
-    opacity: 1;
-  }
-
-  .sp-menu #open{
-    font-size: 32px;
-    line-height: 75px;
-    padding-right: 16px;
-    cursor: pointer;
-  }
-
-  .sp-menu #open.hide{
-    display: none;
-  }
-
-  .overlay{
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 80px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .6s;
-  }
-
-  .overlay.show{
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .overlay #close{
-    position: absolute;
-    top: 24px;
-    right: 18px;
-    font-size: 35px;
-    cursor: pointer;
-    Z-index: 10;
-  }
-
-  .overlay ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .overlay li{
-    margin-top: 24px;
-  }
 
   .btn-wrapper .btn {
     width: 100%;
