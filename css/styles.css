@@ -366,7 +366,7 @@ footer p{
     left: 0;
     background: rgba(255, 255, 255, 0.85);
     text-align: end;
-    padding: 80px;
+    padding: 90px;
     opacity: 0;
     pointer-events: none;
     transition: opacity .6s;
