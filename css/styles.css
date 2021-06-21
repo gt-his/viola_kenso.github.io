@@ -157,9 +157,6 @@ main{
   text-indent: 1em;
   text-align: start;
 }
-.section img{
-  width: 100%;
-}
 
 .article{
   display: flex;
@@ -198,6 +195,16 @@ main{
 
 .introduce{
   width: calc(100% - 500px - 25px);
+}
+
+.jio{
+  display: flex;
+  margin: 10px;
+}
+
+.jio img{
+  height: 50px;
+  margin: 5px;
 }
 
 /* 会社概要 */
