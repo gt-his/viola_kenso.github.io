@@ -281,6 +281,10 @@ main{
   text-align: center;
 }
 
+.price .caution p{
+  text-align: start;
+}
+
 .price table {
   border-collapse: collapse;
   margin: 50px auto;

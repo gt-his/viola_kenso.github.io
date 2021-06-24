@@ -21,13 +21,4 @@
     open.classList.remove('hide');
   });
 
-  $(document).ready(function(){
-    $(window).scroll(function() {
-     if($(this).scrollTop() > 700) { 
-        $('back').fadeIn(); 
-     } else {
-        $('back').fadeOut();
-     }
-    });
-   });
 }
