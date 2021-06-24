@@ -30,10 +30,11 @@ header {
 
 .header-logo{
   height: 75px;
+  margin-left: auto;
 }
 
 .header-menu{
-  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .header-menu ul{
@@ -61,6 +62,10 @@ header {
 
 .sp-menu{
   opacity: 0;
+}
+
+.sp-menu2{
+  display: none;
 }
 
 .overlay{
@@ -443,8 +448,9 @@ footer p{
 #back{
   position: fixed;
   line-height: 75px;
+  text-align: start;
   bottom: 0;
-  right: 16px;
+  left: 16px;
   overflow: hidden;
   width: 100%;
   z-index: 2;
@@ -470,7 +476,7 @@ footer p{
   .sp-menu #open{
     font-size: 32px;
     line-height: 75px;
-    padding-right: 16px;
+    padding-left: 16px;
     cursor: pointer;
   }
   
@@ -484,7 +490,7 @@ footer p{
     right: 0;
     left: 0;
     background: rgba(255, 255, 255, 0.85);
-    text-align: end;
+    text-align: start;
     padding: 90px;
     opacity: 0;
     pointer-events: none;
@@ -499,7 +505,7 @@ footer p{
   .overlay #close{
     position: absolute;
     top: 24px;
-    right: 18px;
+    left: 18px;
     font-size: 35px;
     cursor: pointer;
     Z-index: 10;
@@ -545,6 +551,14 @@ footer p{
 }
 
 @media (max-width: 700px){
+  .sp-menu2{
+    display: block;
+    font-size: 32px;
+    line-height: 75px;
+    padding-right: 16px;
+    opacity: 0;
+  }
+
   .article{
     display: block;
     width: 90%;
