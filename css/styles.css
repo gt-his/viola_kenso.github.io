@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  font-family: 'Kiwi Maru', sans-serif;
+  font-family: sans-serif;
 }
 
 body{
@@ -44,11 +44,11 @@ header {
 }
 
 .header-menu a{
-  font-size: 18px;
+  font-size: 13px;
   font-weight: bold;
   color: darkslateblue;
   text-decoration: none;
-  width: 120px;
+  width: 100px;
   text-align: center;
   line-height: 75px;
   display: block;
@@ -88,14 +88,16 @@ main{
 .title h1{
   font-size :45px;
   font-weight: normal;
+  font-family: 'Kiwi Maru', sans-serif;
 }
 
 .title h2{
   font-size :36px;
   font-weight: normal;
+  font-family: 'Kiwi Maru', sans-serif;
 }
 .title p{
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .btn {
@@ -143,19 +145,25 @@ main{
   color: darkslateblue;
 }
 
-.section h1{
-  font-size :36px;
+.head{
+  background-color: rgba(255,255,255,0.5);
+  padding: 30px;
+}
+
+.head h1{
+  font-size :24px;
   border-bottom: 1px solid darkslateblue;
 }
 
-.section h2{
-  font-size :24px;
+.head h2{
+  font-size :18px;
 }
 
-.section p{
-  font-size: 18px;
+.article p{
+  font-size: 15px;
   text-indent: 1em;
   text-align: start;
+  line-height: 2.5;
 }
 
 .article{
@@ -209,20 +217,21 @@ main{
 
 /* 会社概要 */
 
-.profile h1{
-  font-size: 36px;
+.profile h1,.price h1{
+  font-size: 24px;
   text-align: center;
   border-bottom: 1px solid darkslateblue;
 }
 
-.profile h2{
-  font-size: 24px;
+.profile h2,.price h2{
+  font-size: 18px;
   text-align: center;
 }
 
-.profile p{
-  font-size: 18px;
+.profile p,.price p{
+  font-size: 15px;
   text-indent: 1em;
+  line-height: 2.5;
 }
 
 .company-profile{
@@ -235,27 +244,62 @@ main{
   margin-bottom: 50px;
 }
 
-table {
+.company-profile table {
   border-collapse: collapse;
   margin: 50px auto;
 }
 
-th,td {
-  border: solid 1px #cccccc;
+.company-profile th,.company-profile td {
+  border: solid 1px #fafafc;
   padding: 20px;
   font-size: 15px;
 }
 
-th {
-  width: 20%;
+.company-profile th {
+  width: 25%;
   text-align: left;
-  background-color: #555d6b;
+  background-color: darkslateblue;
   color: #ffffff;
 }
 
-td {
-  background-color: #e8eef9;
-  width: 70%;
+.company-profile td {
+  background-color: rgb(218, 214, 247);
+  width: 65%;
+}
+
+.plan{
+  margin: 50px 20px;
+  padding: 10px;
+  border: 2px solid limegreen;
+  border-radius: 10px;
+}
+
+.price{
+  margin: 100px auto 300px;
+  width: 90%;
+  color: darkslateblue;
+  text-align: center;
+}
+
+.price table {
+  border-collapse: collapse;
+  margin: 50px auto;
+  font-size: 15px;
+  width: 100%;
+}
+
+.price th,.price td{
+  padding: 20px;
+  border: solid 1px #161b1b;
+}
+
+.price th{
+  background-color: rgb(9, 153, 86);
+  color: white;
+}
+
+.price td{
+  background-color: rgb(236, 248, 246);
 }
 
 .greeting{
@@ -280,7 +324,7 @@ td {
 
 .message ul{
   list-style: none;
-  font-size: 18px;
+  font-size: 14px;
   text-align: start;
   margin: 20px auto;
   display: inline-block;
@@ -296,11 +340,12 @@ td {
 
 .column p{
   text-align: start;
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 2.5;
 }
 
 .column h2{
-  font-size: 20px;
+  font-size: 18px;
   text-align: end;
   margin: 50px 10px 0 0;
 }
@@ -313,14 +358,15 @@ td {
 }
 
 .contact h1{
-  font-size: 36px;
+  font-size: 24px;
   text-align: center;
   margin-bottom: 50px;
   border-bottom: 1px solid darkslateblue;
 }
 
 .contact p{
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 2.5;
 }
 
 .caution p{
@@ -372,6 +418,32 @@ footer p{
   margin: 0;
   font-size: 12px;
   text-align: center;
+}
+
+.fixed-footer{
+  font-size: 32px;
+  text-align: end;
+  padding-right: 16px;
+}
+
+.fixed-footer a{
+  display: block;
+  line-height: 60px;
+  transition: all 0.5s;
+}
+
+.fixed-footer a:hover{
+  color: darkgray;
+}
+
+#back{
+  position: fixed;
+  line-height: 75px;
+  bottom: 0;
+  right: 16px;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
 }
 
 @media (max-width: 1000px){
@@ -461,6 +533,10 @@ footer p{
 
   .overlay.show li:nth-child(4) {
     transition-delay: .4s;
+  }
+
+  .overlay.show li:nth-child(5) {
+    transition-delay: .5s;
   }
 }
 
