@@ -71,6 +71,7 @@ header {
 .overlay{
   opacity: 0;
   position: fixed;
+  pointer-events: none;
 }
 
 /* トップ */
@@ -407,6 +408,13 @@ input[type="submit"] {
   border: none;
   -webkit-appearance: none;
   width: 250px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+input[type="submit"]:hover{
+  background-color: #ff9900;
+  color: ivory;
 }
 
 .submit-btn{
@@ -429,31 +437,29 @@ footer p{
   text-align: center;
 }
 
-.fixed-footer{
-  font-size: 32px;
-  text-align: end;
-  padding-right: 16px;
-}
-
 .fixed-footer a{
-  display: block;
-  line-height: 60px;
   transition: all 0.5s;
+  font-size: 32px;
+  color: darkslateblue;
 }
 
 .fixed-footer a:hover{
-  color: darkgray;
+  color: skyblue;
 }
 
 #back{
   position: fixed;
   line-height: 75px;
-  text-align: start;
   bottom: 0;
   left: 16px;
-  overflow: hidden;
-  width: 100%;
-  z-index: 2;
+}
+
+#scrollTop{
+  transition: all 0.5s;
+}
+
+#scrollTop:hover{
+  opacity: 0.7;
 }
 
 @media (max-width: 1000px){
@@ -471,6 +477,8 @@ footer p{
   
   .sp-menu{
     opacity: 1;
+    transition: all 0.5s;
+    color: darkslateblue;
   }
   
   .sp-menu #open{
@@ -478,6 +486,10 @@ footer p{
     line-height: 75px;
     padding-left: 16px;
     cursor: pointer;
+  }
+
+  .sp-menu:hover{
+    color: skyblue;
   }
   
   .sp-menu #open.hide{
