@@ -437,6 +437,11 @@ footer p{
   text-align: center;
 }
 
+footer a{
+  text-decoration: none;
+  color: slateblue;
+}
+
 .fixed-footer a{
   transition: all 0.5s;
   font-size: 32px;
@@ -519,14 +524,32 @@ footer p{
     top: 24px;
     left: 18px;
     font-size: 35px;
+    color: slateblue;
     cursor: pointer;
     Z-index: 10;
+    transition: all 0.5s;
+  }
+
+  .overlay #close:hover{
+    color: skyblue;
   }
   
   .overlay ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+
+  .overlay a{
+    font-size: 13px;
+    font-weight: bold;
+    color: darkslateblue;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+
+  .overlay a:hover{
+    color: skyblue;
   }
   
   .overlay li{
