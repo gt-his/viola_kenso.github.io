@@ -56,3 +56,41 @@ $(function () {
     },500);
   });
 });
+
+// gallery ギャラリー
+let album = [
+  {src: 'img/family.jpg', msg: `ビオラ建装さんに頼んで良かったです。ありがとうございました。太田市 A様`},
+  {src: 'img/family jump.jpg', msg: `最高の仕上がりで家族みんな大喜びです。太田市 T様`},
+  {src: 'img/after.jpg', msg: `コスパ最高の仕上がりです^^ありがとう！太田市 S様`},
+  {src: 'img/現場監督2.jpg', msg: `私たちにお任せください！`},
+  {src: 'img/現場監督.jpg', msg: `安心・誠実をモットーにお客様目線での仕事をさせていただきます！`},
+];
+
+// 最初のデータを表示　写真
+let mainImage = document.createElement('img');
+mainImage.setAttribute('src', album[0].src);
+mainImage.setAttribute('alt', album[0].msg);
+// 最初のデータを表示　キャプション
+let mainMsg = document.createElement('p');
+mainMsg.innerText = mainImage.alt;
+// HTMLに反映
+let mainFlame = document.querySelector('#gallery .main');
+mainFlame.insertBefore(mainImage, null);
+mainFlame.insertBefore(mainMsg, null);
+
+// サムネイル写真画像の表示
+let thumbFlame = document.querySelector('#gallery .thumb');
+for (let i = 0; i < album.length; i++) {
+  let thumbImage = document.createElement('img');
+  thumbImage.setAttribute('src', album[i].src);
+  thumbImage.setAttribute('alt', album[i].msg);
+  thumbFlame.insertBefore(thumbImage, null);
+}
+
+// クリックした画像をメインにする
+thumbFlame.addEventListener('click', function(event) {
+  if (event.target.src) {
+    mainImage.src = event.target.src;
+    mainMsg.innerText = event.target.alt;
+  }
+});
