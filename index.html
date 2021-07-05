@@ -248,15 +248,35 @@
     </div>
     <div class="contact">
       <h1 id="contact-link" class="page-link">お問い合わせ</h1>
+      <p>ご質問、お見積もり依頼などがありましたらお気軽にお寄せください。以下の欄にご記入の上、送信してください。担当者よりご連絡させていただきます。</p>
       <div class="form">
-        <p>ご質問、お見積もり依頼などがありましたらお気軽にお寄せください。以下の欄にご記入の上、送信してください。担当者よりご連絡させていただきます。</p>
         <div class="caution"><p>※営業、勧誘等はお断り致します。</p></div>
         <form>
-        <p><label>名前：<input type="text" name="name"></label></p>
-        <p><label>メールアドレス：<input type="email" name="mail"></label></p>
-        <p><label>電話番号：<input type="text" name="tel"></label></p>
-        <p><label>コメント：<textarea name="comment"></textarea></label></p>
-        <div class="submit-btn"><p><input type="submit" value="送信"></p></div>
+          <p><label>お名前：<span>必須</span></label></p>
+          <input type="text" name="name">
+          <p><label>郵便番号：<span>必須</span></label></p>
+          <input id="zipcode" type="text" maxlength="8">
+          <button id="btn">住所自動入力</button>
+          <div class="address">
+            <div class="prefecture">
+              <p><label>都道府県：<span>必須</span></label></p>
+              <input id="prefecture" type="text">
+            </div>
+            <div class="city">
+              <p><label>市区町村：<span>必須</span></label></p>
+              <input id="city" type="text">
+            </div>
+          </div>
+          <p><label>番地：<span>必須</span></label></p>
+          <input id="address" type="text">
+          <p><label>メールアドレス：</label></p>
+          <input type="email" name="mail">
+          <p><label>電話番号：<span>必須</span></label></p>
+          <input type="text" name="tel">
+          <p><label>お問い合わせ内容：<span>必須</span></label></p>
+          <textarea name="comment"></textarea>
+          <div class="caution2"><p><span>必須</span>の項目は全てご入力ください。</p></div>
+          <div class="submit-btn"><p><input type="submit" value="送信"></p></div>
         </form>
       </div>
     </div>

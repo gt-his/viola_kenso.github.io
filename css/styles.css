@@ -79,7 +79,7 @@ main{
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
-  padding: 180px 0 180px;
+  padding: 190px 0 190px;
   text-align: center;
   background: center/cover url("../img/top.jpg");
   margin-bottom: 30px;
@@ -416,6 +416,7 @@ main{
 .contact p{
   font-size: 14px;
   line-height: 2.5;
+  text-align: center;
 }
 
 .caution p{
@@ -423,18 +424,20 @@ main{
 }
 
 .form{
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
-form p {
-  margin-bottom: 20px;
+.form p {
+  text-align: start;
+  margin: 0;
 }
 
 input, textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 textarea {
@@ -456,7 +459,41 @@ input[type="submit"]:hover{
   color: ivory;
 }
 
-.submit-btn{
+.submit-btn p{
+  text-align: center;
+}
+
+#zipcode {
+  width: 49%;
+}
+
+#btn {
+  margin-left: 5px;
+}
+
+.prefecture {
+  width: 49%;
+}
+
+.city {
+  width: 49%;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form span {
+  background: red;
+  color: white;
+  font-size: 8px;
+  padding: 2px;
+}
+
+.caution2 p {
+  margin: 10px 0 5px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -697,4 +734,5 @@ footer a{
   input[type="submit"] {
     width: 100%;
   }
+
 }
