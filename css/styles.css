@@ -490,8 +490,12 @@ input[type="submit"]:hover{
 }
 
 p.example {
-  margin-left: 10px;
+  margin: 0;
   color: lightgray;
+}
+
+p.comment {
+  line-height: 1;
 }
 
 /* ページ内リンク */
@@ -655,6 +659,10 @@ footer a{
 
   .overlay.show li:nth-child(5) {
     transition-delay: .5s;
+  }
+
+  .overlay.show li:nth-child(6) {
+    transition-delay: .6s;
   }
 }
 
