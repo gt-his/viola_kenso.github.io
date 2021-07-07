@@ -255,27 +255,22 @@
           <p><label>お名前：<span>必須</span></label></p>
           <input type="text" name="name">
           <p><label>郵便番号：<span>必須</span></label></p>
-          <input id="zipcode" type="text" maxlength="8">
-          <button id="btn">住所自動入力</button>
           <div class="address">
-            <div class="prefecture">
-              <p><label>都道府県：<span>必須</span></label></p>
-              <input id="prefecture" type="text">
-            </div>
-            <div class="city">
-              <p><label>市区町村：<span>必須</span></label></p>
-              <input id="city" type="text">
-            </div>
+            <input id="zipcode" type="text" name="zip11" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+            <div class="caution3"><p>半角入力ハイフンなし</p></div>
           </div>
-          <p><label>番地：<span>必須</span></label></p>
-          <input id="address" type="text">
+          <p><label>住所：<span>必須</span></label></p>
+          <input type="text" name="addr11">
           <p><label>メールアドレス：</label></p>
           <input type="email" name="mail">
           <p><label>電話番号：<span>必須</span></label></p>
           <input type="text" name="tel">
-          <p><label>お問い合わせ内容：<span>必須</span></label></p>
+          <div class="address">
+            <p><label>お問い合わせ内容：<span>必須</span></label></p>
+            <p class="example">例）外壁・屋根塗装の見積り依頼</p>
+          </div>
           <textarea name="comment"></textarea>
-          <div class="caution2"><p><span>必須</span>の項目は全てご入力ください。</p></div>
+          <div class="caution2"><p><span>必須</span> の項目は全てご入力ください。</p></div>
           <div class="submit-btn"><p><input type="submit" value="送信"></p></div>
         </form>
       </div>
@@ -289,6 +284,7 @@
     <p><a href="#" id="scrollTop"><img src="img/logo.png" alt="ロゴ" width=100px></a></p>
     <p><i class="far fa-copyright"></i> 2021 Viola_Kenso  by gt_his</p>
   </footer>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
 </body>

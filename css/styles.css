@@ -463,27 +463,6 @@ input[type="submit"]:hover{
   text-align: center;
 }
 
-#zipcode {
-  width: 49%;
-}
-
-#btn {
-  margin-left: 5px;
-}
-
-.prefecture {
-  width: 49%;
-}
-
-.city {
-  width: 49%;
-}
-
-.address {
-  display: flex;
-  justify-content: space-between;
-}
-
 .form span {
   background: red;
   color: white;
@@ -495,6 +474,24 @@ input[type="submit"]:hover{
   margin: 10px 0 5px;
   font-size: 12px;
   text-align: center;
+}
+
+.caution3 p {
+  margin: 25px 0 0 10px;
+  font-size: 11px;
+}
+
+.address {
+  display: flex;
+}
+
+#zipcode {
+  width: 40%;
+}
+
+p.example {
+  margin-left: 10px;
+  color: lightgray;
 }
 
 /* ページ内リンク */
