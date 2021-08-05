@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -416,7 +417,10 @@ main{
 .contact p{
   font-size: 14px;
   line-height: 2.5;
-  text-align: center;
+}
+
+p.form-title {
+  text-indent: 1em;
 }
 
 .caution p{
@@ -433,7 +437,7 @@ main{
   margin: 0;
 }
 
-input, textarea {
+.form input, textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
@@ -441,7 +445,7 @@ input, textarea {
 }
 
 textarea {
-  height: 120px;
+  height: 150px;
 }
 
 input[type="submit"] {
@@ -476,27 +480,24 @@ input[type="submit"]:hover{
   text-align: center;
 }
 
-.caution3 p {
-  margin: 25px 0 0 10px;
-  font-size: 11px;
-}
-
-.address {
-  display: flex;
-}
-
 #zipcode {
   width: 40%;
 }
 
-p.example {
-  margin: 0;
+::placeholder {
   color: lightgray;
 }
 
-p.comment {
-  line-height: 1;
+.category input {
+  width: 20px;
 }
+
+.years input {
+  width: 150px;
+  height: 14px;
+  margin-bottom: 10px;
+}
+
 
 /* ページ内リンク */
 .page-link{
