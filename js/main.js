@@ -39,24 +39,24 @@
     });
 
     // クリックで上に戻るボタン
-    topBtn.click(function (event) {
-      event.preventDefault(); // 無効化
-      $('body,html').animate({
-        scrollTop: 0
-      },500);
-    });
+    // topBtn.click(function (event) {
+    //   event.preventDefault(); // 無効化
+    //   $('body,html').animate({
+    //     scrollTop: 0
+    //   },500);
+    // });
   });
 
-  $(function () {
-    let topBtn2 = $('#scrollTop,#scrollTop2,#scrollTop3');
-    // topBtn2.hide();
-    topBtn2.click(function (event) {
-      event.preventDefault();
-      $('body,html').animate({
-        scrollTop: 0
-      },500);
-    });
-  });
+  // $(function () {
+  //   let topBtn2 = $('#scrollTop,#scrollTop2,#scrollTop3');
+  //   // topBtn2.hide();
+  //   topBtn2.click(function (event) {
+  //     event.preventDefault();
+  //     $('body,html').animate({
+  //       scrollTop: 0
+  //     },500);
+  //   });
+  // });
 
   // gallery ★ギャラリー★
   let album = [
