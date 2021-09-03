@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/a6eb280b2d.js"crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>お問い合わせ : 外壁・屋根リフォームのビオラ建装</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">トップページ</a></li>
+          <li><a href="review.html">お客様の声</a></li>
+          <li><a href="price.html">料金案内</a></li>
+          <li><a href="profile.html#profile-link">会社概要</a></li>
+          <li><a href="profile.html#greeting-link">代表挨拶</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="sp-menu">
+      <i class="fas fa-bars" id="open"></i>
+    </div>
+    <div class="header-logo"><a href="index.html" id="scrollTop"><img src="img/logo文字.png" alt="ロゴ"></a></div>
+    <div class="sp-menu2">
+      <i class="fas fa-bars" id="open"></i>
+    </div>
+  </header>
+  <div class="overlay">
+    <i class="fas fa-times" id="close"></i>
+    <nav id="navi">
+      <ul>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="review.html">お客様の声</a></li>
+        <li><a href="price.html">料金案内</a></li>
+        <li><a href="profile.html#profile-link">会社概要</a></li>
+        <li><a href="profile.html#greeting-link">代表挨拶</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+        <li><a href="sitemap.html">サイトマップ</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="contact">
+      <h1 id="contact-link" class="page-link">お問い合わせ</h1>
+      <p class="form-title">ご質問、お見積もり依頼などがありましたらお気軽にお寄せください。以下の欄にご記入の上、送信してください。担当者よりご連絡させていただきます。</p>
+      <div class="form">
+        <form>
+          <div class="category">
+            <p><label>お問い合わせ内容：<span>必須</span></label><br>
+              <div class="caution"><p>※営業、勧誘等はお断り致します。</p></div>
+              <input type="checkbox" name="category" value="contents" id="estimate"><label for="estimate">見積り依頼</label>
+              <input type="checkbox" name="category" value="contents" id="
+              research"><label for="
+              research">調査依頼</label>
+              <input type="checkbox" name="category" value="contents" id=""><label for="repair">修理依頼</label>
+              <input type="checkbox" name="category" value="contents" id="etc"><label for="etc">その他</label>
+            </p>
+          </div>
+          <p><label>お名前：<span>必須</span></label></p>
+          <input type="text" name="name">
+          <p><label>郵便番号：<span>必須</span></label></p>
+          <input id="zipcode" type="text" name="zip11" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" placeholder="半角入力 ハイフンなし">
+          <p><label>住所：<span>必須</span></label></p>
+          <input type="text" name="addr11" placeholder="自動入力">
+          <p><label>メールアドレス：</label></p>
+          <input type="email" name="mail" placeholder="半角入力">
+          <p><label>電話番号：<span>必須</span></label></p>
+          <input type="text" name="tel" placeholder="半角入力 ハイフンなし">
+          
+          <div class="category">
+            <p>お住まいについて：</p>
+            <div class="years">
+              <p><label>築年数 /</label> <input type="text" name="years" id="years" list="yearslist">
+                <datalist id="yearslist">
+                  <option value="〜10年"></option>
+                  <option value="11〜15年"></option>
+                  <option value="16〜20年"></option>
+                  <option value="21〜25年"></option>
+                  <option value="26〜30年"></option>
+                  <option value="31年〜"></option>
+                  <option value="覚えていない"></option>
+                </datalist></p>
+            </div>
+            <p>
+              構造 /<input type="checkbox" name="category" value="construction" id="wood"><label for="wood">木造</label>
+              <input type="checkbox" name="category" value="construction" id="steel"><label for="steel">S(鉄骨)造</label>
+              <input type="checkbox" name="category" value="construction" id="concrete"><label for="concrete">RC(コンクリート)造</label>
+              <input type="checkbox" name="category" value="construction" id="etc"><label for="etc">他</label>
+            </p>
+            <p>
+              外壁 /<input type="checkbox" name="category" value="wall" id="siding"><label for="siding">サイディング</label>
+              <input type="checkbox" name="category" value="wall" id="mortar"><label for="mortar">モルタル</label>
+              <input type="checkbox" name="category" value="wall" id="metal"><label for="metal">金属</label>
+              <input type="checkbox" name="category" value="wall" id="etc"><label for="etc">他</label>
+            </p>
+            <p>
+              屋根 /<input type="checkbox" name="category" value="roof" id="slate"><label for="slate">スレート</label>
+              <input type="checkbox" name="category" value="roof" id="roof tile"><label for="roof tile">瓦</label>
+              <input type="checkbox" name="category" value="roof" id="metal"><label for="metal">金属</label>
+              <input type="checkbox" name="category" value="roof" id="etc"><label for="etc">他</label>
+            </p>
+          </div>
+          <p class="comment"><label>備考：</label></p>
+          <textarea name="comment" placeholder="例）外壁・屋根塗装の見積もりをお願いします。築10年の木造住宅です。"></textarea>
+          <div class="caution2"><p><span>必須</span> の項目は全てご入力ください。</p></div>
+          <div class="submit-btn"><p><input type="submit" value="送信"></p></div>
+        </form>
+      </div>
+    </div>
+  </div><!-- container -->
+  <footer>
+    <div class="footer-menu">
+      <div class="footer-menu-1">
+        <a href="#" id="scrollTop">上部に戻る</a>
+        <a href="index.html" id="scrollTop">トップページ</a>
+      </div>
+      <div class="footer-menu-2">
+        <a href="review.html" id="scrollTop">お客様の声</a>
+        <a href="price.html" id="scrollTop">料金案内</a>
+        <a href="profile.html#profile-link" id="scrollTop">会社概要</a>
+        <a href="profile.html#greeting-link" id="scrollTop">代表挨拶</a>
+      </div>
+      <div class="footer-menu-3">
+        <a href="contact.html" id="scrollTop">お問い合わせ</a>
+      </div>
+    </div>
+    <div class="fixed-footer">
+      <a href="#"><i class="fas fa-chevron-up" id="back"></i></a>
+    </div>
+    <p><a href="index.html" id="scrollTop"><img src="img/logo.png" alt="ロゴ" width=100px></a></p>
+    <p><a href="privacy.html">プライバシーポリシー</a> | <a href="sitemap.html">サイトマップ</a></p>
+    <p><i class="far fa-copyright"></i> 2021 Viola_Kenso  by gt_his</p>
+  </footer>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

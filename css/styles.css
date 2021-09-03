@@ -189,7 +189,6 @@ main{
 /* gallery */
 #gallery {
   margin: 100px auto;
-  padding-top: 40px;
   width: 90%;
   text-align: center;
   color: darkslateblue;
@@ -362,7 +361,7 @@ main{
 }
 
 .price{
-  margin: 100px auto 300px;
+  margin: 100px auto;
   width: 90%;
   color: darkslateblue;
   text-align: center;
@@ -394,7 +393,7 @@ main{
 }
 
 .greeting{
-  margin: 100px auto 300px;
+  margin: 200px auto;
   width: 90%;
   color: darkslateblue;
 }
@@ -444,7 +443,7 @@ main{
 /* 問い合わせ */
 .contact{
   width: 90%;
-  margin: 200px auto;
+  margin: 100px auto;
   color: darkslateblue;
 }
 
@@ -547,7 +546,7 @@ input[type="submit"]:hover{
 }
 
 footer{
-  margin: 200px 0 20px;
+  margin: 100px 0 20px;
 }
 
 footer p{
@@ -559,6 +558,18 @@ footer p{
 footer a{
   text-decoration: none;
   color: slateblue;
+}
+
+.footer-menu {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu a {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .fixed-footer a{
@@ -790,4 +801,22 @@ footer a{
     width: 100%;
   }
 
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .footer-menu-1 {
+    width: 190px;
+    margin: 0 auto 5px;
+  }
+
+  .footer-menu-2 {
+    width: 320px;
+    margin: 0 auto 5px;
+  }
+
+  .footer-menu-3 {
+    width: 100px;
+    margin: 0 auto 5px;
+  }
 }
